@@ -16,7 +16,7 @@ var app = express();
 var configDB = require('./config/database.js');
 
 // Get Mongoose to use the global promise library
-mongoose.Promise = global.Promise;
+// mongoose.Promise = global.Promise;
 
 // Connect to our database
 mongoose.connect(configDB.url);
